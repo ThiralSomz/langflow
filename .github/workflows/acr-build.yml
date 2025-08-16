@@ -19,5 +19,5 @@ jobs:
       - name: Build and Push
         run: |
           docker build -t langflow:latest .
-          docker tag langflow:latest <acr-name>.azurecr.io/langflow:latest
+          docker tag langflow:latest somzegistry.azurecr.io/langflow:latest
           docker push <acr-name>.azurecr.io/langflow:latest
